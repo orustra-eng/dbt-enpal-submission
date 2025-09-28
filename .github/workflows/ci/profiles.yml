@@ -1,11 +1,12 @@
 enpal_assessment_project:
-  target: docs
+  target: ci
   outputs:
-    docs:
+    ci:
       type: postgres
-      host: localhost
-      user: none
-      password: none
+      host: 127.0.0.1
+      user: admin
+      password: admin
       port: 5432
-      dbname: none
-      schema: docs
+      dbname: analytics
+      schema: pipedrive_analytics
+      threads: 4
