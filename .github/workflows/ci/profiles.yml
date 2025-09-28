@@ -1,0 +1,11 @@
+enpal_assessment_project:
+  target: docs
+  outputs:
+    docs:
+      type: postgres
+      host: localhost
+      user: none
+      password: none
+      port: 5432
+      dbname: none
+      schema: docs
