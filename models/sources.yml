@@ -3,7 +3,8 @@ version: 2
 sources:
   - name: pipedrive
     description: "Seeded Pipedrive extracts"
-    schema: public        # change to raw_data if you reseed there
+    database: "{{ target.database }}"          # or omit if you always use the same DB
+    schema: "{{ target.schema }}"
     tables:
       - name: activity
         columns:
